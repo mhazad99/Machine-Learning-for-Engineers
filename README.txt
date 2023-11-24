@@ -6,8 +6,9 @@
   same directory as the code file. Then you need to change these two lines of code that
   comes as following to your directory path:
 		
-	df_data_1 = Prepare_dataset(column_names_1,'DIRECTORY OF THE FIRST DATASET ON YOUR DRIVE')
-	df_data_2 = Prepare_dataset(column_names_2,'DIRECTORY OF THE SECOND DATASET ON YOUR DRIVE')
+	# read data
+	Train_df = pd.read_csv('DIRECTORY OF THE TRAINING DATA ON YOUR DRIVE')
+	Test_df = pd.read_csv('DIRECTORY OF THE TEST DATA ON YOUR DRIVE')
 
     * After changing these two directories in the code, now the life becomes easier and you can run
       the entire code on the google colab or other IDE that you prefer!
